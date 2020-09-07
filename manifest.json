@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "Yontobatsu",
+  "version": "1.0",
+
+  "description": "Speed up annoying yet mendatory video",
+
+  "icons": {
+    "48": "./Yontobatsu.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.withgoogle.com/*"],
+      "js": ["main.js"]
+    }
+  ]
+
+}
